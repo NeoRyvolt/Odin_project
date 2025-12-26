@@ -1,0 +1,16 @@
+*{ 
+    background-color:bisque;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(193, 147, 87);
+    height: 100%;
+    width: 100%;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
