@@ -1,5 +1,11 @@
 *{ 
     background-color:bisque;
+    background-image: url("../../images/Lasagna.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-opacity: 30%;
+    overflow:hidden;
 }
 h1{
     display: flex;
