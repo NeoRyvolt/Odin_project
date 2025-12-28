@@ -1,18 +1,27 @@
-*{ 
-    background-color:bisque;
-    background-image: url("../../images/Lasagna.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+/* Page background - apply to body for full-page control */
+body {
+    /* Cafe tint overlay — adjust alpha (0.0 - 1.0) for intensity:
+       e.g. rgba(165,110,64,0.35) (warm/light) or rgba(102,56,0,0.45) (richer brown) */
+    --bg-overlay: rgba(102, 56, 0, 0.45); /* default cafe brown */
+    background:
+        linear-gradient(var(--bg-overlay), var(--bg-overlay)),
+        url("../../images/Lasagna.jpg") center/cover no-repeat fixed;
+
+    background-color: #efe2d6; /* warm cream fallback */
     background-position: center;
-    overflow:hidden;
-}
+    background-attachment: fixed; /* keeps background fixed while content scrolls */
+} 
+
+/* Keep box-sizing consistent */
+* { box-sizing: border-box; }
 h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(193, 147, 87);
+    color: #f6ead8; /* light cream for contrast over brown tint */
     height: 100%;
     width: 100%;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3); /* subtle depth */
 }
 img{
     display: block;
